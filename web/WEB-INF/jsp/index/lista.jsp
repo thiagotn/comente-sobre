@@ -1,7 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:include page="/WEB-INF/template/cabecalho.jsp"/>
 
-<table border="1" >
+<a href="<c:url value="/"/>">Novo coment&aacute;rio</a>
+
+<table bordercolor="black" >
 	<c:forEach items="${comentarios}" var="comentario">
 		<tr>
 			<td>Id:</td>
@@ -26,7 +28,5 @@
 		</tr>	
 	</c:forEach>
 </table>
-
-<a href="<c:url value="/"/>">Novo coment&aacute;rio</a>
 
 <jsp:include page="/WEB-INF/template/rodape.jsp"/>

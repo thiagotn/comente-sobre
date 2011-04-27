@@ -3,7 +3,7 @@
 
 
 <form id="formComentario" action="<c:url value="/index/salva"/>" method="post">
-	<table border="1px">
+	<table bordercolor="black">
 		<tr>
 			<td>
 				Assunto: 
