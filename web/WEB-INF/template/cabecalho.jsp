@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="<c:url value="/layout/css/960.css"/>" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="<c:url value="/layout/css/reset.css"/>" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="<c:url value="/layout/css/style.css"/>" media="screen"/>
-<%-- 		<link rel="stylesheet" type="text/css" href="<c:url value="/layout/css/comente-sobre.css"/>" media="screen"/> --%>
+		<link rel="stylesheet" type="text/css" href="<c:url value="/layout/css/comente-sobre.css"/>" media="screen"/>
 	</head>
   <body>
   	<h1>BLOG Comente Sobre</h1>

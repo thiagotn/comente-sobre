@@ -2,14 +2,18 @@
 <jsp:include page="/WEB-INF/template/cabecalho.jsp"/>
 
 <form id="formAssunto" method="post">
-	<table border="1px">
+	<table>
 		<tr>
 			<td>
 				Sobre o que você deseja comentar?
 			</td>
+		</tr>
+		<tr>
 			<td>		
 				<input type="text" id="assunto" name="comentario.assunto"/>			
 			</td>
+		</tr>	
+		<tr>	
 			<td>
 				<input type="submit" id="submitAssunto" value="Enviar"/>			
 			</td>	
