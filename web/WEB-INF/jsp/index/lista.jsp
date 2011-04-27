@@ -11,11 +11,13 @@
 	<c:forEach items="${comentarios}" var="comentario">
 		<tr>
 			<td>${comentario.id}</td>
-			<td>${comentario.assunto}</td>
 			<td>${comentario.email}</td>
+			<td>${comentario.assunto}</td>
 			<td>${comentario.comentario}</td>
 		</tr>	
 	</c:forEach>
 </table>
+
+<a href="<c:url value="/"/>">Novo</a>
 
 <jsp:include page="/WEB-INF/template/rodape.jsp"/>

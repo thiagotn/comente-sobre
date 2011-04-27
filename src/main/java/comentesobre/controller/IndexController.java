@@ -2,12 +2,13 @@ package comentesobre.controller;
 
 import java.util.List;
 
-import com.google.common.base.Strings;
-
+import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
+import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 
+import com.google.common.base.Strings;
 import comentesobre.dao.ComentarioDao;
 import comentesobre.modelo.Comentario;
 
@@ -27,12 +28,12 @@ public class IndexController {
 		
 	}
 
-	@Path("/{comentario.assunto}")
+	@Post @Path("/{comentario.assunto}")
 	public void form(Comentario comentario) {
-		System.out.println(comentario.getAssunto());
 		result.include("comentario", comentario);
 	}
 	
+	@Post
 	public void salva(Comentario comentario) {
 		if((!Strings.isNullOrEmpty(comentario.getComentario())) && (!Strings.isNullOrEmpty(comentario.getEmail()))) {
 			comentarioDao.salva(comentario);
@@ -40,6 +41,7 @@ public class IndexController {
 		result.redirectTo(IndexController.class).lista();
 	}
 	
+	@Get @Path("/comentarios")
 	public void lista() {
 		List<Comentario> comentarios = comentarioDao.lista();
 		result.include("comentarios", comentarios);

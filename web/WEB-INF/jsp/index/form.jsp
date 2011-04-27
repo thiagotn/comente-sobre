@@ -2,7 +2,7 @@
 <jsp:include page="/WEB-INF/template/cabecalho.jsp"/>
 
 
-<form action="<c:url value="/salva"/>" method="post">
+<form action="<c:url value="/index/salva"/>" method="post">
 	<table border="1px">
 		<tr>
 			<td>
@@ -15,8 +15,8 @@
 			</td>
 		</tr>
 		<tr>			
-			<td>
-				Comentário: <input type="text" name="comentario.comentario" value="${comentario.comentario}"/>			
+			<td style="vertical-align: top;">
+				Comentário:<textarea name="comentario.comentario" rows="20" cols="50">${comentario.comentario}</textarea>			
 			</td>
 		</tr>
 		<tr>				
