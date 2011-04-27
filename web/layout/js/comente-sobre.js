@@ -27,8 +27,8 @@ $(document).ready(function() {
 		messages: {
 			"comentario.assunto": "Preencha o assunto",
 			"comentario.email" : {
-				required : "Informe o email",
-				email : "Informe um email v&aacute;lido"
+				required : "Preencha o email",
+				email : "Preencha um email v&aacute;lido"
 			},
 			"comentario.comentario": "Preencha o coment&aacute;rio"
 		}

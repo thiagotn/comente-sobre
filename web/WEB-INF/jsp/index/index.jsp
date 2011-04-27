@@ -2,7 +2,7 @@
 <jsp:include page="/WEB-INF/template/cabecalho.jsp"/>
 
 <form id="formAssunto" method="post">
-	<table align="center" bordercolor="black" width="100%">
+	<table align="center"  width="100%">
 		<tr>
 			<td align="center">
 				Sobre o que você deseja comentar?

@@ -5,7 +5,6 @@ body {
   padding-bottom: 20px;
   font-family: "lucida grande", verdana, sans-serif;
   font-size: 20px;
-  color: #333;
   text-align: center;
 }
 
@@ -24,6 +23,17 @@ h1 {
   text-align: center;
   padding-top: 20px;
   font-size: 30px;
+  color: #85B839;
+  text-transform: none
+}
+
+h1 a {
+  color: #85B839;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  text-decoration: none;
 }
 
 h2 {
@@ -55,6 +65,13 @@ p {
   color: #000;
 }
 
+.comentario {
+  color: #85B839;
+  font-size: 16px;
+  margin: 35px 0 10px;
+  text-transform: none
+}
+
 .container_12,
 .container_16,
 .container_24 {
@@ -62,3 +79,4 @@ p {
   background-repeat: repeat-y;
   margin-bottom: 20px;
 }
+

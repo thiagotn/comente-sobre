@@ -7,19 +7,19 @@
 	<c:forEach items="${comentarios}" var="comentario">
 		<tr>
 			<td>Id:</td>
-			<td>${comentario.id}</td>
+			<td class="comentario">${comentario.id}</td>
 		</tr>
 		<tr>	
 			<td>E-mail:</td>
-			<td>${comentario.email}</td>
+			<td class="comentario">${comentario.email}</td>
 		</tr>
 		<tr>
 			<td>Assunto:</td>	
-			<td>${comentario.assunto}</td>
+			<td class="comentario">${comentario.assunto}</td>
 		</tr>
 		<tr>
-			<td>Coment&aacute;rio:</td>	
-			<td>${comentario.comentario}</td>
+			<td style="vertical-align: top;">Coment&aacute;rio:</td>	
+			<td class="comentario">${comentario.comentario}</td>
 		</tr>
 		<tr>
 			<td colspan="2">

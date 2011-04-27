@@ -1,7 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:include page="/WEB-INF/template/cabecalho.jsp"/>
 
-
 <form id="formComentario" action="<c:url value="/index/salva"/>" method="post">
 	<table bordercolor="black">
 		<tr>
