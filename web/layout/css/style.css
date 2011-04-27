@@ -1,0 +1,64 @@
+body {
+  background: #E7E7E7 url(img/bg.png) fixed;
+  color: #333;
+  height: auto;
+  padding-bottom: 20px;
+  font-family: "lucida grande", verdana, sans-serif;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: "lucida grande", verdana, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+h2 {
+  padding-top: 20px;
+  text-align: justify;
+}
+
+h2 a {
+  color: #343434;
+  font-size: 20px;
+}
+
+h2 a:hover {
+  text-decoration: none;
+}
+
+p {
+  border: 1px solid #E7E7E7;
+  overflow: hidden;
+  text-align: center;
+}
+
+.button a:hover {
+  text-decoration: none;
+}
+
+.button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container_12,
+.container_16,
+.container_24 {
+  background: #E7E7E7 url(img/bg.png) fixed;
+  background-repeat: repeat-y;
+  margin-bottom: 20px;
+}
