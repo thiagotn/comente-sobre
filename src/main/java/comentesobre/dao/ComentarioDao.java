@@ -6,7 +6,7 @@ import comentesobre.modelo.Comentario;
 
 public interface ComentarioDao {
 
-	List<Comentario> lista();
+	List<Comentario> lista(String assunto);
 
 	void salva(Comentario comentario);
 	

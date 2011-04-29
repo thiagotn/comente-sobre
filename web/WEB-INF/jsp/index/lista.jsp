@@ -1,9 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:include page="/WEB-INF/template/cabecalho.jsp"/>
 
-<a href="<c:url value="/"/>">Novo coment&aacute;rio</a>
+<p>Comentários sobre: <b>${assunto}</b> - <a href="<c:url value="/"/>">novo</a></p>
 
-<table bordercolor="black" >
+<table bordercolor="black" width="100%">
 	<c:forEach items="${comentarios}" var="comentario">
 		<tr>
 			<td>Id:</td>
