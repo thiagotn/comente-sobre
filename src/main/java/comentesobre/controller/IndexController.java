@@ -13,7 +13,7 @@ import br.com.caelum.vraptor.Result;
 import com.google.common.base.Strings;
 import comentesobre.dao.ComentarioDao;
 import comentesobre.modelo.Comentario;
-import comentesobre.util.Util;
+import comentesobre.util.StringUtil;
 
 @Resource
 public class IndexController {
@@ -46,7 +46,7 @@ public class IndexController {
 	@Post
 	public void salva(Comentario comentario) {
 		String assunto = comentario.getAssunto();
-		assunto = Util.converteStringParaUri(assunto);
+		assunto = StringUtil.converteStringParaUri(assunto);
 		if((!Strings.isNullOrEmpty(comentario.getComentario())) && (!Strings.isNullOrEmpty(comentario.getEmail()))) {
 			comentario.setAssunto(assunto);
 			comentarioDao.salva(comentario);
