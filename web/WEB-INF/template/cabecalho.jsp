@@ -20,7 +20,7 @@
 	  <div class="clear"></div> 
 	  <div class="grid_2"> 
 	    <p> 
-	      
+
 	    </p> 
 	  </div> 
 	  <!-- end .grid_2 --> 

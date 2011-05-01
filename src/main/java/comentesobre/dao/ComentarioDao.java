@@ -8,6 +8,8 @@ public interface ComentarioDao {
 
 	List<Comentario> lista(String assunto);
 
+	List<Object[]> listaAssuntos();
+	
 	void salva(Comentario comentario);
 	
 }

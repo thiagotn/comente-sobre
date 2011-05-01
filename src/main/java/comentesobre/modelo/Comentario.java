@@ -1,15 +1,22 @@
 package comentesobre.modelo;
 
+import java.util.Calendar;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 public class Comentario {
 
 	@Id @GeneratedValue
 	private Long id;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Calendar data;
 	
 	private String assunto;
 	
@@ -24,6 +31,14 @@ public class Comentario {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+	
+	public Calendar getData() {
+		return data;
+	}
+
+	public void setData(Calendar data) {
+		this.data = data;
 	}
 
 	public String getAssunto() {

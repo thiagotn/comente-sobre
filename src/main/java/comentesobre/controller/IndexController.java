@@ -2,6 +2,7 @@ package comentesobre.controller;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.util.Calendar;
 import java.util.List;
 
 import br.com.caelum.vraptor.Get;
@@ -28,7 +29,8 @@ public class IndexController {
 	
 	@Path("/")
 	public void index() { 
-		
+		List<Object[]> assuntos = comentarioDao.listaAssuntos();
+		result.include("assuntos", assuntos);
 	}
 
 	@Post @Path("/{comentario.assunto}")
@@ -46,6 +48,7 @@ public class IndexController {
 	@Post
 	public void salva(Comentario comentario) {
 		String assunto = comentario.getAssunto();
+		comentario.setData(Calendar.getInstance());
 		assunto = StringUtil.converteStringParaUri(assunto);
 		if((!Strings.isNullOrEmpty(comentario.getComentario())) && (!Strings.isNullOrEmpty(comentario.getEmail()))) {
 			comentario.setAssunto(assunto);

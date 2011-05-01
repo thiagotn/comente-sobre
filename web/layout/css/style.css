@@ -72,6 +72,33 @@ p {
   text-transform: none
 }
 
+.assunto {
+  color: #85B839;
+  font-size: 36px;
+  margin: 35px 0 10px;
+  text-transform: none
+}
+
+.assunto a {
+  color: #85B839;
+  font-size: 36px;
+  margin: 35px 0 10px;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.assunto a:hover {
+  text-decoration: none;
+}
+
+
+.assuntoCount {
+  color: #000;
+  font-size: 36px;
+  margin: 35px 0 10px;
+  text-decoration: none;
+}
+
 .container_12,
 .container_16,
 .container_24 {
