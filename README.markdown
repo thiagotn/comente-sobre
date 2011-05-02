@@ -1,11 +1,11 @@
 ## Você deve criar um projeto chamado comente-sobre.
 
 # Requisitos Técnicos:
-Java ou Groovy
-Hibernate
-Spring MVC, Struts ou vRaptor
-Bancos de Dados relacional ou similar (HSQLDB, Derby)
-Na apresentação utilizar JSP, JavaScript e CSS.
+ * Java ou Groovy
+ * Hibernate
+ * Spring MVC, Struts ou vRaptor
+ * Bancos de Dados relacional ou similar (HSQLDB, Derby)
+ * Na apresentação utilizar JSP, JavaScript e CSS.
 
 A ideia é basicamente a seguinte:
 
