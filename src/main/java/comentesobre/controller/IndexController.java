@@ -29,8 +29,7 @@ public class IndexController {
 	
 	@Path("/")
 	public void index() { 
-		List<Object[]> assuntos = comentarioDao.listaAssuntos();
-		result.include("assuntos", assuntos);
+		listaTopAssuntos();
 	}
 
 	@Post @Path("/{comentario.assunto}")
@@ -43,6 +42,7 @@ public class IndexController {
 		}
 		comentario.setAssunto(assunto);
 		result.include("comentario", comentario);
+		listaTopAssuntos();
 	}
 	
 	@Post
@@ -62,5 +62,11 @@ public class IndexController {
 		List<Comentario> comentarios = comentarioDao.lista(assunto);
 		result.include("comentarios", comentarios);
 		result.include("assunto", assunto);
+		listaTopAssuntos();
+	}
+	
+	private void listaTopAssuntos() {
+		List<Object[]> assuntos = comentarioDao.listaAssuntos();
+		result.include("assuntos", assuntos);
 	}
 }

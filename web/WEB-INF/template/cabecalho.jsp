@@ -4,6 +4,7 @@
 <html> 
 	<head>
 		<title>Comente Sobre</title>
+		<link rel="shortcut icon" href="<c:url value="/layout/img/favicon.ico"/>" type="image/x-icon" />
 		<script type="text/javascript" src="<c:url value="/layout/js/jquery-1.5.2.min.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/layout/js/jquery.validate.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/layout/js/comente-sobre.js"/>"></script>
@@ -14,7 +15,7 @@
 		<link rel="stylesheet" type="text/css" href="<c:url value="/layout/css/comente-sobre.css"/>" media="screen"/>
 	</head>
   <body>
-  	<h1><a href="<c:url value="/"/>">Comente Sobre - BLOG</a></h1>
+  	<h1><a href="<c:url value="/"/>">Comente Sobre - BLOG <img src="<c:url value="/layout/img/favicon.ico"/>"/> </a></h1>
 	<div class="container_12"> 
 	  <!-- end .grid_12 --> 
 	  <div class="clear"></div> 

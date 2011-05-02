@@ -74,14 +74,14 @@ p {
 
 .assunto {
   color: #85B839;
-  font-size: 36px;
+  font-size: 26px;
   margin: 35px 0 10px;
   text-transform: none
 }
 
 .assunto a {
   color: #85B839;
-  font-size: 36px;
+  font-size: 26px;
   margin: 35px 0 10px;
   text-transform: none;
   text-decoration: none;
@@ -91,11 +91,20 @@ p {
   text-decoration: none;
 }
 
-
 .assuntoCount {
   color: #000;
-  font-size: 36px;
+  font-size: 26px;
   margin: 35px 0 10px;
+  text-decoration: none;
+}
+
+.topAssuntos {
+  text-align: left;		
+}
+
+.creditos {
+  color: #000;
+  font-size: 12px;
   text-decoration: none;
 }
 
